@@ -1,0 +1,10 @@
+---
+  - name: install apache web server
+    yum:
+     name: httpd
+     state: installed
+  - name: start apache webserver
+    service:
+     name: httpd
+     state: started
+     enabled: true
